@@ -98,7 +98,7 @@ donuts.push("Lemon Pie");
 
 //6 Use either the join() or toString() method to convert an array to a string.
 console.log(donuts.toString());
-console.log(donuts.join(", "));
+console.log(donuts.join("🍩"));
 
 //7 Write the command to make a copy of the array using slice.
 // The copy should NOT include two donuts.
@@ -107,11 +107,11 @@ console.log(donuts.slice(0, 7));
 
 
 //8 Write the command that gives the indexOf where "chocolate" is located.
-console.log(donuts.indexOf('Chocolate'));
+donuts.indexOf('Chocolate');
 
 
 //9 Write the command that gives the indexOf where "glazed" is located (You may get a negative number).
-console.log(donuts.indexOf('Glazed'));
+donuts.indexOf('Glazed');
 
 
 //10 **Using the splice method, remove one donut from the array and add another.
@@ -124,5 +124,11 @@ console.log(donuts.concat("Bob"));
 
 //12 **Create a function called getdonuts() that will display all the donuts in your array and display on your page.
 function getdonuts() {
-    document.getElementById("btn").innerHTML = donuts.sort();
+    document.getElementById("btn").innerHTML = donuts.sort().join("🍩");
 }
+
+
+// add a function that removes the donuts on an onclick
+
+// .sort() puts in alphabetical order
+// toString() turns a number into a string/ adds a . between strings
